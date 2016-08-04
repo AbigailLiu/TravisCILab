@@ -1,0 +1,20 @@
+{
+"name": "travis_web_app",
+"version": "1.0.0",
+"private": true,
+"description": "Node.js plus jasmine on travis CI",
+"author": "First Last <first.last@example.com>",
+"main": "index.js",
+"scripts": {
+  "start": "nodemon index.js",
+  "test": "./node_modules/.bin/jasmine-node --verbose spec/test.spec.js"
+},
+"dependencies": {
+  "express": "^4.13.3",
+  "nodemon": "*",
+  "request": "*"
+},
+"devDependencies": {
+  "jasmine-node": "*"
+}
+}
